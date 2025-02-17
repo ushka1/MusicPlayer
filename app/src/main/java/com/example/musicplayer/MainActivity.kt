@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         setupActivity()
         setupToolbar()
-        setupSearchButton()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -71,12 +70,5 @@ class MainActivity : AppCompatActivity() {
 
         // It's the menu icon, that keeps Toolbar size the same, no matter the padding.
         setSupportActionBar(toolbar)
-    }
-
-    private fun setupSearchButton() {
-        val button = binding.searchSongButton
-        button.setOnClickListener {
-            Snackbar.make(binding.root, "Searching...", Snackbar.LENGTH_SHORT).show()
-        }
     }
 }
