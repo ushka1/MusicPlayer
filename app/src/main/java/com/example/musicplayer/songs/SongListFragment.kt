@@ -35,7 +35,11 @@ class SongListFragment : Fragment(R.layout.fragment_song_list) {
 
     private fun setupSearchButton() {
         binding.searchSongButton.setOnClickListener {
-            Snackbar.make(binding.root, "Searching...", Snackbar.LENGTH_SHORT).show()
+            val snackbar = Snackbar.make(binding.root, "Searching...", Snackbar.LENGTH_SHORT)
+            snackbar.show()
+            snackbar.setAction("Close") {
+                snackbar.dismiss()
+            }
         }
     }
 }
