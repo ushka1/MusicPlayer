@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.MusicPlayer.Toolbar" parent="Base.Theme.MusicPlayer">
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+    </style>
+
+</resources>

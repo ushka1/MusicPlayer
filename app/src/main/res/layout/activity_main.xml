@@ -15,7 +15,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/song_list_fragment"
-        android:name="com.example.musicplayer.SongListFragment"
+        android:name="com.example.musicplayer.songs.SongListFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"

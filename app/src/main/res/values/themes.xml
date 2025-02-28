@@ -4,7 +4,6 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/davy_gray</item>
         <item name="colorOnPrimary">@color/light_green</item>
-        <item name="colorControlNormal">?attr/colorOnPrimary</item>
     </style>
 
     <style name="Theme.MusicPlayer" parent="Base.Theme.MusicPlayer" />

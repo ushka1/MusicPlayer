@@ -1,4 +1,4 @@
-package com.example.musicplayer
+package com.example.musicplayer.songs
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.musicplayer.R
 import com.example.musicplayer.databinding.FragmentSongListBinding
-import com.example.musicplayer.songs.SongList
-import com.example.musicplayer.songs.SongsRecyclerAdapter
 import com.google.android.material.snackbar.Snackbar
 
 class SongListFragment : Fragment(R.layout.fragment_song_list) {

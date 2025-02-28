@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "Deleting playlist...", Snackbar.LENGTH_SHORT).show()
             }
         }
+
         return true
     }
 
@@ -72,3 +73,5 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
     }
 }
+
+
