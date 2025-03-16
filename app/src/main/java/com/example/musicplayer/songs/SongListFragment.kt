@@ -19,11 +19,14 @@ class SongListFragment : Fragment(R.layout.fragment_song_list) {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentSongListBinding.inflate(layoutInflater)
+        return binding.root
+    }
 
+    // All initialization logic goes here.
+    // https://stackoverflow.com/questions/75108726/should-i-inflate-the-layout-in-oncreateview-or-onviewcreated
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setupSongsRecycler()
         setupSearchButton()
-
-        return binding.root
     }
 
     private fun setupSongsRecycler() {

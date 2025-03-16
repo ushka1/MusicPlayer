@@ -17,6 +17,11 @@ class PlayerControlsFragment : Fragment(R.layout.fragment_player_controls) {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentPlayerControlsBinding.inflate(layoutInflater)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.playPauseButton.setOnClickListener {
             val snackbar = Snackbar.make(binding.root, "Play/Pause", Snackbar.LENGTH_SHORT)
@@ -25,6 +30,7 @@ class PlayerControlsFragment : Fragment(R.layout.fragment_player_controls) {
                 snackbar.dismiss()
             }
         }
+
         binding.stopButton.setOnClickListener {
             val snackbar = Snackbar.make(binding.root, "Stop", Snackbar.LENGTH_SHORT)
             snackbar.setAction("Close") {
@@ -32,7 +38,5 @@ class PlayerControlsFragment : Fragment(R.layout.fragment_player_controls) {
             }
             snackbar.show()
         }
-
-        return binding.root
     }
 }
